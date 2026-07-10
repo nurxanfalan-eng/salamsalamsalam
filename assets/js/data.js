@@ -185,7 +185,7 @@ const GALLERY_IMAGES = [
 const FAQ_DATA = [
   {
     q: 'Sifariş necə verə bilərəm?',
-    a: 'Saytımızın "Sifariş Et" bölməsindən menyudan istədiyiniz məhsulları seçin, məlumatlarınızı doldurun və WhatsApp vasitəsilə sifariş verin. Həmçinin bilavasitə nömrəmizi — +994 50 253 19 89 — zəng edərək sifariş edə bilərsiniz.'
+    a: 'Saytımızın "Sifariş Et" bölməsindən menyudan istədiyiniz məhsulları seçin, məlumatlarınızı doldurun və WhatsApp vasitəsilə sifariş verin. Həmçinin bilavasitə nömrəmizi — +994 50 538 47 49 — zəng edərək sifariş edə bilərsiniz.'
   },
   {
     q: 'Çatdırılma xidməti varmı?',
