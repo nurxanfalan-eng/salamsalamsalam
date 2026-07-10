@@ -9,8 +9,8 @@
  */
 
 // ── WhatsApp nömrələri (yalnız rəqəm, "+" olmadan) ──────────
-const ORDER_WA   = '994559406018';  // Sifariş
-const RESERVE_WA = '994559406018';  // Rezervasiya
+const ORDER_WA   = '994505384749';  // Sifariş
+const RESERVE_WA = '994505384749';  // Rezervasiya
 
 // ── Dövlət ──────────────────────────────────────────────────
 let cart = {};           // { id: { item, qty } }
