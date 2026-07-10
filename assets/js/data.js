@@ -201,7 +201,7 @@ const FAQ_DATA = [
   },
   {
     q: 'Allerji məlumatı ala bilərəmmi?',
-    a: 'Bəli. Hər məhsulun tərkibi menyuda göstərilmişdir. Əlavə allerji məlumatı üçün bizimlə WhatsApp vasitəsilə əlaqə saxlayın: +994 50 253 19 89.'
+    a: 'Bəli. Hər məhsulun tərkibi menyuda göstərilmişdir. Əlavə allerji məlumatı üçün bizimlə WhatsApp vasitəsilə əlaqə saxlayın: +994 50 538 47 49.'
   },
   {
     q: 'Minimum sifariş məbləği varmı?',
