@@ -37,7 +37,7 @@ const MENU_DATA = [
         name: '"Crepes" Bounty® ilə',
         desc: 'Kokos, qaymaq, qatılaşdırılmış süd',
         price: 5.99,
-        img: 'assets/images/crepe-food.jpg',
+        img: 'assets/images/bouty.jpg',
         popular: true
       },
       {
@@ -45,7 +45,7 @@ const MENU_DATA = [
         name: '"Crepes" Nutella® ilə',
         desc: 'Nutella',
         price: 5.99,
-        img: 'assets/images/crepe-food.jpg',
+        img: 'assets/images/nutella.jpg',
         popular: true
       },
       {
@@ -53,7 +53,7 @@ const MENU_DATA = [
         name: '"Crepes" Snickers® ilə',
         desc: 'Karamel, Araxis, Nutella®',
         price: 5.99,
-        img: 'assets/images/crepe-food.jpg',
+        img: 'assets/images/snickers.jpg',
         popular: true
       },
       {
