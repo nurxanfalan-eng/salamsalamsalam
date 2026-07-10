@@ -1,0 +1,9 @@
+# System
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# Node (if ever used)
+node_modules/
+.env

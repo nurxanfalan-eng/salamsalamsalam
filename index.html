@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="theme-color" content="#f5f0eb" />
+  <title>Crepes - 50 Qəpik Lənkəran</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="assets/images/logo.png" alt="Crepes Logo" class="nav-logo-img" />
+        <span class="nav-brand">Crepes</span>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-menu" id="navMenu">
+      <a href="#haqqinda" class="nav-link" data-page="haqqinda">Haqqında</a>
+      <a href="#menyu" class="nav-link" data-page="menyu">Menyu</a>
+      <a href="#qalerya" class="nav-link" data-page="qalerya">Qalerya</a>
+      <a href="#rezervasiya" class="nav-link" data-page="rezervasiya">Rezervasiya</a>
+      <a href="#sifaris" class="nav-link" data-page="sifaris">Sifariş Et</a>
+      <a href="#faq" class="nav-link" data-page="faq">FAQ</a>
+    </div>
+  </nav>
+
+  <!-- ==================== PAGES CONTAINER ==================== -->
+  <main class="pages-container" id="pagesContainer">
+
+    <!-- ========== HAQQINDA PAGE ========== -->
+    <section class="page active" id="haqqinda">
+      <div class="hero-section">
+        <div class="hero-logo-wrap">
+          <img src="assets/images/logo.png" alt="Crepes Logo" class="hero-logo" />
+        </div>
+        <h1 class="hero-title">Salam, 50 Qəpik Lənkəran!</h1>
+        <p class="hero-subtitle">Ən dadlı kreplər, ən mehriban atmosfer</p>
+      </div>
+
+      <div class="about-cards">
+        <div class="about-card">
+          <div class="about-icon">🕐</div>
+          <h3>İş Saatları</h3>
+          <div class="hours-list">
+            <div class="hour-row"><span>Bazar ertəsi</span><span>09:00 – 22:00</span></div>
+            <div class="hour-row"><span>Çərşənbə axşamı</span><span>09:00 – 22:00</span></div>
+            <div class="hour-row"><span>Çərşənbə</span><span>09:00 – 22:00</span></div>
+            <div class="hour-row"><span>Cümə axşamı</span><span>09:00 – 22:00</span></div>
+            <div class="hour-row"><span>Cümə</span><span>09:00 – 23:00</span></div>
+            <div class="hour-row"><span>Şənbə</span><span>09:00 – 23:00</span></div>
+            <div class="hour-row"><span>Bazar</span><span>10:00 – 22:00</span></div>
+          </div>
+        </div>
+
+        <div class="about-card contact-card">
+          <div class="about-icon">📞</div>
+          <h3>Əlaqə</h3>
+          <a href="https://wa.me/994502531989" class="contact-item whatsapp-link" target="_blank" rel="noopener">
+            <span class="contact-icon">💬</span>
+            <span>+994 50 253 19 89</span>
+          </a>
+          <a href="https://maps.app.goo.gl/KxRhchVD7wBTEM1b9" class="contact-item" target="_blank" rel="noopener">
+            <span class="contact-icon">📍</span>
+            <span>Ünvanı Xəritədə Gör</span>
+          </a>
+          <a href="https://www.instagram.com/50qepikzeytun_lenkeran?igsh=MTN1NTV5N291NGlucQ==" class="contact-item" target="_blank" rel="noopener">
+            <span class="contact-icon">📷</span>
+            <span>Instagram</span>
+          </a>
+        </div>
+
+        <div class="about-card info-card">
+          <div class="about-icon">ℹ️</div>
+          <h3>Haqqımızda</h3>
+          <p>Salam 50 Qəpik Lənkəran! Biz Lənkəranda ən ləzzətli krep təcrübəsini sizə təqdim edirik. Hər bir krep sevgi ilə hazırlanır — şirin yaxud doyumlu, hər zövq üçün seçim var!</p>
+        </div>
+      </div>
+
+      <button class="cta-btn" onclick="navigateTo('menyu')">Menyuya Bax 🥞</button>
+    </section>
+
+    <!-- ========== MENYU PAGE ========== -->
+    <section class="page" id="menyu">
+      <div class="page-header">
+        <h2 class="page-title">Menyu</h2>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-cat="sirin">🍫 Şirin Kreplər</button>
+        <button class="menu-tab" data-cat="doyumlu">🧀 Doyumlu Kreplər</button>
+        <button class="menu-tab" data-cat="ickilar">🥤 İçkilər</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid"></div>
+
+      <!-- Cart Bar -->
+      <div class="cart-bar" id="cartBar">
+        <div class="cart-bar-inner">
+          <span class="cart-count" id="cartCount">0 məhsul</span>
+          <span class="cart-total" id="cartTotal">0,00 ₼</span>
+          <button class="cart-go-btn" onclick="navigateTo('sifaris')">Sifarişə keç →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== QALERYA PAGE ========== -->
+    <section class="page" id="qalerya">
+      <div class="page-header">
+        <h2 class="page-title">Qalerya</h2>
+        <p class="page-subtitle">Məhsullarımız</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox">
+        <button class="lb-close" id="lbClose">✕</button>
+        <button class="lb-prev" id="lbPrev">‹</button>
+        <button class="lb-next" id="lbNext">›</button>
+        <div class="lb-img-wrap">
+          <img src="" alt="" class="lb-img" id="lbImg" />
+          <p class="lb-caption" id="lbCaption"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== REZERVASIYA PAGE ========== -->
+    <section class="page" id="rezervasiya">
+      <div class="page-header">
+        <h2 class="page-title">Rezervasiya</h2>
+        <p class="page-subtitle">Masanı əvvəlcədən sifariş edin</p>
+      </div>
+      <div class="form-card">
+        <form id="reservationForm" class="form-body" novalidate>
+          <div class="form-group">
+            <label for="resName">Ad Soyad *</label>
+            <input type="text" id="resName" placeholder="Adınız" required />
+          </div>
+          <div class="form-group">
+            <label for="resPhone">Telefon *</label>
+            <input type="tel" id="resPhone" placeholder="+994 XX XXX XX XX" required />
+          </div>
+          <div class="form-group">
+            <label for="resDate">Tarix *</label>
+            <input type="date" id="resDate" required />
+          </div>
+          <div class="form-group">
+            <label for="resTime">Saat *</label>
+            <input type="time" id="resTime" required />
+          </div>
+          <div class="form-group">
+            <label for="resPeople">Neçə nəfər? *</label>
+            <select id="resPeople" required>
+              <option value="">Seçin</option>
+              <option value="1">1 nəfər</option>
+              <option value="2">2 nəfər</option>
+              <option value="3">3 nəfər</option>
+              <option value="4">4 nəfər</option>
+              <option value="5">5 nəfər</option>
+              <option value="6+">6+ nəfər</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="resNote">Əlavə qeyd</label>
+            <textarea id="resNote" placeholder="Xüsusi istəklər..." rows="3"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">WhatsApp ilə Göndər 💬</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========== SİFARİŞ PAGE ========== -->
+    <section class="page" id="sifaris">
+      <div class="page-header">
+        <h2 class="page-title">Sifariş Et</h2>
+        <p class="page-subtitle">Seçdiyiniz məhsullar</p>
+      </div>
+
+      <!-- Order Items from Cart -->
+      <div class="order-cart-section" id="orderCartSection">
+        <div class="order-items-list" id="orderItemsList">
+          <p class="empty-cart-msg" id="emptyCartMsg">Hələ heç bir məhsul seçilməyib. <button class="text-link" onclick="navigateTo('menyu')">Menyuya get →</button></p>
+        </div>
+        <div class="order-summary" id="orderSummary" style="display:none">
+          <div class="summary-row">
+            <span>Cəmi:</span>
+            <strong id="orderTotal">0,00 ₼</strong>
+          </div>
+          <button class="clear-cart-btn" onclick="clearCart()">Səbəti Təmizlə</button>
+        </div>
+      </div>
+
+      <!-- Manual Add -->
+      <div class="form-card" style="margin-top:12px;">
+        <div class="manual-add-header">
+          <span>Əl ilə məhsul əlavə et</span>
+          <button class="toggle-manual-btn" id="toggleManualBtn" onclick="toggleManualAdd()">+</button>
+        </div>
+        <div id="manualAddSection" style="display:none; margin-top:10px;">
+          <div class="manual-add-row">
+            <input type="text" id="manualItem" placeholder="Məhsul adı" />
+            <input type="number" id="manualQty" placeholder="Miq." min="1" value="1" style="width:70px;" />
+            <button class="add-manual-btn" onclick="addManualItem()">Əlavə et</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Form -->
+      <div class="form-card" style="margin-top:12px;">
+        <form id="orderForm" class="form-body" novalidate>
+          <div class="form-group">
+            <label for="ordName">Ad Soyad *</label>
+            <input type="text" id="ordName" placeholder="Adınız" required />
+          </div>
+          <div class="form-group">
+            <label for="ordPhone">Telefon *</label>
+            <input type="tel" id="ordPhone" placeholder="+994 XX XXX XX XX" required />
+          </div>
+          <div class="form-group">
+            <label for="ordAddress">Ünvan / Çatdırılma yeri *</label>
+            <input type="text" id="ordAddress" placeholder="Ünvanınız..." required />
+          </div>
+          <div class="form-group location-group">
+            <button type="button" class="location-btn" id="locationBtn" onclick="getLocation()">
+              <span>📍</span> Konumumu Al
+            </button>
+            <span class="location-status" id="locationStatus"></span>
+          </div>
+          <div class="form-group">
+            <label for="ordNote">Əlavə qeyd</label>
+            <textarea id="ordNote" placeholder="Xüsusi istəklər..." rows="2"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">WhatsApp ilə Sifariş Ver 🛵</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========== FAQ PAGE ========== -->
+    <section class="page" id="faq">
+      <div class="page-header">
+        <h2 class="page-title">Tez-tez Sorulan Suallar</h2>
+      </div>
+      <div class="faq-list" id="faqList"></div>
+    </section>
+
+  </main>
+
+  <!-- ==================== BOTTOM NAV ==================== -->
+  <nav class="bottom-nav" id="bottomNav">
+    <button class="bn-item active" data-page="haqqinda" onclick="navigateTo('haqqinda')">
+      <span class="bn-icon">🏠</span>
+      <span class="bn-label">Haqqında</span>
+    </button>
+    <button class="bn-item" data-page="menyu" onclick="navigateTo('menyu')">
+      <span class="bn-icon">🥞</span>
+      <span class="bn-label">Menyu</span>
+    </button>
+    <button class="bn-item" data-page="qalerya" onclick="navigateTo('qalerya')">
+      <span class="bn-icon">🖼</span>
+      <span class="bn-label">Qalerya</span>
+    </button>
+    <button class="bn-item" data-page="rezervasiya" onclick="navigateTo('rezervasiya')">
+      <span class="bn-icon">📅</span>
+      <span class="bn-label">Rezerv</span>
+    </button>
+    <button class="bn-item" data-page="sifaris" onclick="navigateTo('sifaris')">
+      <span class="bn-icon">🛵</span>
+      <span class="bn-label">Sifariş</span>
+    </button>
+    <button class="bn-item" data-page="faq" onclick="navigateTo('faq')">
+      <span class="bn-icon">❓</span>
+      <span class="bn-label">FAQ</span>
+    </button>
+  </nav>
+
+  <!-- ==================== INGREDIENT MODAL ==================== -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal-box" id="modalBox" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-img-wrap">
+        <img src="" alt="" class="modal-img" id="modalImg" />
+      </div>
+      <h3 class="modal-name" id="modalName"></h3>
+      <p class="modal-ingredients" id="modalIngredients"></p>
+      <div class="modal-price" id="modalPrice"></div>
+      <button class="modal-order-btn" id="modalOrderBtn">Səbətə Əlavə Et 🛒</button>
+    </div>
+  </div>
+
+  <!-- ==================== TOAST ==================== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
