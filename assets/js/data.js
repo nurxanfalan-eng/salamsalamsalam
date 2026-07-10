@@ -61,7 +61,7 @@ const MENU_DATA = [
         name: '"Crepes" Banan Qaymaq ilə',
         desc: 'Banan, qaymaq, qatılaşdırılmış süd',
         price: 5.99,
-        img: 'assets/images/crepe-food.jpg',
+        img: 'assets/images/bananqaymaqnutella.jpg',
         popular: true
       },
       {
@@ -69,7 +69,7 @@ const MENU_DATA = [
         name: '"Crepes" Banan Qaymaq və Nutella® ilə',
         desc: 'Banan, qaymaq, Nutella®',
         price: 5.99,
-        img: 'assets/images/crepe-food.jpg',
+        img: 'assets/images/bananqaymaq.jpg',
         popular: true
       },
       {
@@ -77,7 +77,7 @@ const MENU_DATA = [
         name: '"Crepes" Giləmeyvə ilə',
         desc: 'Çiyələk',
         price: 5.99,
-        img: 'assets/images/crepe-food.jpg',
+        img: 'assets/images/gile.jpg',
         popular: false
       },
       {
@@ -99,7 +99,7 @@ const MENU_DATA = [
         name: '"Crepes" Blindoq',
         desc: 'Sosis, holland pendiri',
         price: 5.99,
-        img: 'assets/images/crepe-food.jpg',
+        img: 'assets/images/blindoq.jpg',
         popular: false
       },
       {
@@ -107,7 +107,7 @@ const MENU_DATA = [
         name: '"Crepes" Julyen ilə',
         desc: 'Qöbələk, qaymaq, holland pendiri',
         price: 11.49,
-        img: 'assets/images/crepe-food.jpg',
+        img: 'assets/images/julyen.jpg',
         popular: false
       },
       {
@@ -115,7 +115,7 @@ const MENU_DATA = [
         name: '"Crepes" Şirin və Turş Sousda Toyuq ilə',
         desc: 'Toyuq, şirin və turş sousu, holland pendiri',
         price: 11.49,
-        img: 'assets/images/crepe-food.jpg',
+        img: 'assets/images/soustoyuq.jpg',
         popular: false
       },
       {
@@ -123,7 +123,7 @@ const MENU_DATA = [
         name: '"Crepes" Ədviyyatlı Toyuq Tərəvəz ilə',
         desc: 'Toyuq əti, ədviyyatlı sousu, mangal salatı, holland pendiri',
         price: 11.49,
-        img: 'assets/images/crepe-food.jpg',
+        img: 'assets/images/toyuqterevez.jpg',
         popular: false
       },
       {
@@ -131,7 +131,7 @@ const MENU_DATA = [
         name: '"Crepes" Pendir ilə',
         desc: 'Holland pendiri',
         price: 5.99,
-        img: 'assets/images/crepe-food.jpg',
+        img: 'assets/images/pendir.jpg',
         popular: false
       }
     ]
